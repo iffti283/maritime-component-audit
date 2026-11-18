@@ -8,7 +8,7 @@ permissions: {}
 
 jobs:
   publish:
-    if: github.repository == 'iffti283/maritime-component-audit' && github.actor == 'iffti283' && github.event.head_commit.message == 'Publish the verified RC4 companion archive'
+    if: github.repository == 'iffti283/maritime-component-audit' && github.actor == 'iffti283' && github.event.before == '2a3843f657d1dbe494684db7ee9f9124aeac819b'
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     permissions:
