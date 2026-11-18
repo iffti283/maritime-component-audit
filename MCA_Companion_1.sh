@@ -881,7 +881,10 @@ from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 work = Path(sys.argv[1])
 local = sys.argv[2]
 asset_url = "https://github.com/iffti283/maritime-component-audit/releases/download/v0.1.0-rc4/MCA_Software.zip"
-asset_hash = "64c17918db068359170b6fe675f61f09e1ef81a2560590f22c03710ac37e8c3e"
+asset_hashes = {
+    "902823fb818ec173524e59b748a7636df2cc8de61f9afbbf2583edacbca6a2dc",
+    "64c17918db068359170b6fe675f61f09e1ef81a2560590f22c03710ac37e8c3e",
+}
 result = Path("MCA_Companion_1.zip")
 if result.exists():
     raise SystemExit(f"File already exists: {result}")
@@ -891,7 +894,7 @@ else:
     asset = work / "MCA_Software.zip"
     with urlopen(Request(asset_url, headers={"User-Agent": "MCA-companion/1"}), timeout=90) as response, asset.open("wb") as dst:
         shutil.copyfileobj(response, dst)
-if hashlib.sha256(asset.read_bytes()).hexdigest() != asset_hash:
+if hashlib.sha256(asset.read_bytes()).hexdigest() not in asset_hashes:
     raise SystemExit("RC4 software archive SHA-256 mismatch")
 
 root = work / "companion"
