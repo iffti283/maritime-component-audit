@@ -1,0 +1,26 @@
+name: Publish the RC4 manuscript companion
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/publish-manuscript-companion.yml']
+
+permissions: {}
+
+jobs:
+  publish:
+    if: github.repository == 'iffti283/maritime-component-audit' && github.actor == 'iffti283' && github.event.head_commit.message == 'Publish the verified RC4 companion archive'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Build and verify manuscript companion 1
+        run: |
+          curl --fail --silent --show-error --location --output MCA_Companion_1.sh https://raw.githubusercontent.com/iffti283/maritime-component-audit/a9a8c1358c0b2efab30e9223400e7dbec2fd9f53/MCA_Companion_1.sh
+          echo 'b339c6e7a2858ccf7ac5d3dc34930e29d8a300516dee5f100d3cc21760fb8e90  MCA_Companion_1.sh' | sha256sum --check
+          sh MCA_Companion_1.sh
+          echo 'ea64c014659ce32578520ad0baa190531dd5626d5d675b09c3335a41c2f84e8e  MCA_Companion_1.zip' | sha256sum --check
+      - name: Attach the verified archive to the tested software release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload v0.1.0-rc4 MCA_Companion_1.zip --repo iffti283/maritime-component-audit
