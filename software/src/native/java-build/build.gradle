@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+repositories {
+    if (findProperty('mavenMirror')) {
+        maven { url = uri(findProperty('mavenMirror')); allowInsecureProtocol = true }
+    } else {
+        mavenCentral()
+    }
+}
+dependencies {
+    implementation 'org.hyperledger.fabric-chaincode-java:fabric-chaincode-shim:2.5.10'
+    implementation 'org.json:json:20250517'
+    compileOnly 'org.projectlombok:lombok:1.18.38'
+    annotationProcessor 'org.projectlombok:lombok:1.18.38'
+}
+sourceSets.main.java.srcDirs = [file("${findProperty('upstreamPath')}/asset-transfer-sbom/chaincode-java/src/main/java")]
+tasks.register('copyRuntime', Copy) {
+    from configurations.runtimeClasspath
+    into layout.buildDirectory.dir('runtime')
+}

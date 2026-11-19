@@ -1,0 +1,21 @@
+name: Offline verification
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  membership:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m unittest discover -s tests
+        working-directory: software
+      - run: python src/check_release.py
+        working-directory: software
+      - run: python examples/demo.py
+        working-directory: software

@@ -1,0 +1,29 @@
+{"tool": "cryptogen", "exit_code": 0}
+{"tool": "configtxgen", "exit_code": 0}
+{"tool": "osnadmin", "exit_code": 0, "operation": "channel join"}
+{"tool": "peer", "exit_code": 0, "organization": "Org1MSP", "operation": "channel join"}
+{"tool": "peer", "exit_code": 0, "organization": "Org2MSP", "operation": "channel join"}
+{"tool": "peer", "exit_code": 0, "organization": "Org3MSP", "operation": "channel join"}
+{"tool": "peer", "exit_code": 0, "organization": "Org1MSP", "operation": "install"}
+{"tool": "peer", "exit_code": 0, "organization": "Org1MSP", "operation": "calculatepackageid"}
+{"tool": "peer", "exit_code": 0, "organization": "Org1MSP", "operation": "approveformyorg"}
+{"tool": "peer", "exit_code": 0, "organization": "Org2MSP", "operation": "install"}
+{"tool": "peer", "exit_code": 0, "organization": "Org2MSP", "operation": "calculatepackageid"}
+{"tool": "peer", "exit_code": 0, "organization": "Org2MSP", "operation": "approveformyorg"}
+{"tool": "peer", "exit_code": 0, "organization": "Org3MSP", "operation": "install"}
+{"tool": "peer", "exit_code": 0, "organization": "Org3MSP", "operation": "calculatepackageid"}
+{"tool": "peer", "exit_code": 0, "organization": "Org3MSP", "operation": "approveformyorg"}
+{"tool": "peer", "exit_code": 0, "organization": "Org1MSP", "operation": "commit"}
+{"tool": "peer", "exit_code": 0, "organization": "Org1MSP", "operation": "querycommitted"}
+{"tool": "peer", "exit_code": 0, "organization": "Org1MSP", "operation": "invoke", "contract_function": "CreateAsset"}
+{"tool": "peer", "exit_code": 0, "organization": "Org1MSP", "operation": "query", "contract_function": "ReadAsset"}
+{"tool": "peer", "exit_code": 0, "organization": "Org2MSP", "operation": "query", "contract_function": "ReadAsset"}
+{"tool": "peer", "exit_code": 1, "organization": "Org3MSP", "operation": "query", "contract_function": "ReadAsset"}
+{"tool": "peer", "exit_code": 0, "organization": "Org1MSP", "operation": "query", "contract_function": "ReadSbomPrivate"}
+{"tool": "peer", "exit_code": 1, "organization": "Org2MSP", "operation": "query", "contract_function": "ReadSbomPrivate"}
+{"tool": "peer", "exit_code": 1, "organization": "Org3MSP", "operation": "query", "contract_function": "ReadSbomPrivate"}
+{"tool": "peer", "exit_code": 0, "organization": "Org2MSP", "operation": "query", "contract_function": "ReadAsset"}
+{"tool": "peer", "exit_code": 1, "organization": "Org1MSP", "operation": "invoke", "contract_function": "CreateAsset"}
+{"tool": "peer", "exit_code": 0, "organization": "Org2MSP", "operation": "query", "contract_function": "ReadAsset"}
+{"tool": "peer", "exit_code": 0, "organization": "Org1MSP", "operation": "invoke", "contract_function": "CreateAsset"}
+{"tool": "peer", "exit_code": 0, "organization": "Org2MSP", "operation": "query", "contract_function": "ReadAsset"}

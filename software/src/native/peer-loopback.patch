@@ -1,0 +1,17 @@
+diff --git a/core/peer/config.go b/core/peer/config.go
+index c310368..bae074c 100644
+--- a/core/peer/config.go
++++ b/core/peer/config.go
+@@ -345,6 +345,12 @@ func getLocalAddress() (string, error) {
+ 		return "", errors.Errorf("peer.address isn't in host:port format: %s", peerAddress)
+ 	}
+ 
++	// Explicit loopback addresses do not need interface discovery.
++	if ip := net.ParseIP(host); ip != nil && ip.IsLoopback() &&
++		!viper.GetBool("peer.addressAutoDetect") {
++		return peerAddress, nil
++	}
++
+ 	localIP, err := getLocalIP()
+ 	if err != nil {
+ 		peerLogger.Errorf("local IP address not auto-detectable: %s", err)

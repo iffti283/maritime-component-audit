@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite this software when using Maritime Component Audit."
+title: Maritime Component Audit
+type: software
+version: 0.1.0-rc4
+authors:
+  - family-names: Iftikhar
+    given-names: Ahmed
+  - family-names: Wang
+    given-names: Haiyan
+    orcid: "https://orcid.org/0000-0002-4739-9288"
+repository-code: "https://github.com/iffti283/maritime-component-audit"
+license: MIT

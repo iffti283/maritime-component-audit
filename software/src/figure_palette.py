@@ -1,0 +1,12 @@
+"""Print palette sampled from the audit-outcomes reference PDF."""
+
+INK = "#27313e"
+MUTED = "#777d85"
+RULE = "#e5e7e8"
+PAPER = "#ffffff"
+NAVY = "#213e6b"
+RED = "#a53424"
+OCHRE = "#9e5b23"
+PALE = "#f5ecd0"
+GOLD_EDGE = "#dfc878"
+CONNECTOR = "#39768b"

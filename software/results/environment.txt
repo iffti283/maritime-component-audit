@@ -1,0 +1,13 @@
+Benchmark interpreter: CPython 3.12.14
+Host CPU reported by /proc/cpuinfo: Intel Xeon Platinum 8573C
+Platform: linux/x86_64
+Execution: one sequential Python benchmarking process on a shared machine.
+Verifier time: local monotonic clock, median of 3 calls per partial request,
+               or 9 calls per complete request.
+Byte measurements: encoded payloads produced by the executable implementation.
+Compression: Python standard-library gzip, level 6 and constant mtime.
+Native setup: Fabric v2.5.12 orderer and three peers at the v2.5.12 source tag,
+              with an explicit loopback startup compatibility patch.
+
+Extended study: CPython 3.12.14, cryptography 50.0.0, Matplotlib 3.10.8, Pillow 13.0.0.
+Desktop test: CPython 3.13.5, PyQt 5.15.11, Qt runtime 5.15.15, offscreen platform.

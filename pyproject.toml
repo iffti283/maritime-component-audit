@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maritime-component-audit"
+version = "0.1.0rc4"
+description = "Position-bound verification of selected CycloneDX component records"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "Ahmed Iftikhar"}, {name = "Haiyan Wang"}]
+dependencies = []
+
+[project.scripts]
+mca = "sbom_disclosure:main"
+
+[tool.setuptools]
+package-dir = {"" = "software/src"}
+py-modules = ["sbom_disclosure"]

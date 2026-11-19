@@ -1,0 +1,10 @@
+project,release,member,sha256,spec_version,records,profile_result
+cryptography,50.0.0,cryptography-50.0.0.dist-info/sboms/cryptography-rust.cyclonedx.json,dfb8693ef064d5c733124ecf7b6dfaf47f8c7eb3f445812a99b8936e3746b5c0,1.5,39,expected CycloneDX 1.2 or 1.6
+cryptography,50.0.0,cryptography-50.0.0.dist-info/sboms/sbom.json,3b0e4a8dd582b545032c0c1c8b0ce656a24076c0a84edbf359fa2906c07838e5,1.5,1,expected CycloneDX 1.2 or 1.6
+pillow,13.0.0,pillow-13.0.0.dist-info/sboms/auditwheel.cdx.json,d4c7d41b4eac586f935c189dc49205b127137c39f2babc54ac5d34fe4afc1e0e,1.4,2,'serialNumber'
+pillow,13.0.0,pillow-13.0.0.dist-info/sboms/pillow-13.0.0.cdx.json,fe1ca6e3a4f73e7018a3805a75a19377453f342d203712f37387ad6ee853fd44,1.7,24,expected CycloneDX 1.2 or 1.6
+pip,26.2.2,pip/_vendor/bom.cdx.json,7be976001ba70fe6b38530af13063bea96e1bd894c271c4e57908c737079ef93,1.4,19,'serialNumber'
+pydantic_core,2.46.4,pydantic_core-2.46.4.dist-info/sboms/pydantic-core.cyclonedx.json,34670207347e90bf2c010cd61dd75f6b340d146b6523c057c3d5bae3efac5fce,1.5,103,expected CycloneDX 1.2 or 1.6
+rpds-py,2026.6.3,rpds_py-2026.6.3.dist-info/sboms/rpds-py.cyclonedx.json,80a3bfbae1607e51b2569566a469b8a6d9a984d4923c0824086418a6c8a3e763,1.5,17,expected CycloneDX 1.2 or 1.6
+scikit-learn,1.8.0,scikit_learn-1.8.0.dist-info/sboms/auditwheel.cdx.json,73eda2d061a2794ea41e19b9716dc574fa66362939d967fd3e1811e5d993be96,1.4,2,'serialNumber'
+uv,0.13.9,uv-0.13.9.dist-info/sboms/uv.cyclonedx.json,2e7e37c95155180a31b80f720b97ab73ec9dbf5838041aa5bc31532169414d6b,1.5,566,expected CycloneDX 1.2 or 1.6

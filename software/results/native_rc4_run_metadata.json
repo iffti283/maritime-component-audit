@@ -1,0 +1,332 @@
+{
+  "software_version": "0.1.0-rc4",
+  "run_started_utc": "2026-11-18T20:00:09Z",
+  "run_completed_utc": "2026-11-18T20:00:29Z",
+  "fabric": {
+    "release": "v2.5.12",
+    "release_commit": "af0b647fc99bc529c5788a238dac081d0fa86194",
+    "official_linux_amd64_archive_sha256": "248be10de7f030a85eaecee118043e84f7b107aa3a8d3c48e6208f5fce0543b6",
+    "official_source_archive_sha256": "de33aae52dc793a91f49d209c201e3151853772b3bb5241edb46d17fc8cd5884",
+    "local_peer_build_go_version": "go1.24.4",
+    "local_peer_executable_sha256": "a6822fe6d78546721e521e06cf2680a43fe4004ce1e3071675d1d35b4d914853",
+    "local_peer_patch_sha256": "7722c1c2e78ee164af694ee78223a3d9dfb3f4275378ea701a2149e80fdeaead",
+    "channel": "sbomchannel",
+    "contract": "sbom",
+    "orderer": "one local Raft orderer",
+    "organisation_count": 3,
+    "peer_organisations": [
+      "Org1MSP",
+      "Org2MSP",
+      "Org3MSP"
+    ]
+  },
+  "java": {
+    "jdk": "OpenJDK 21.0.13",
+    "tool": "javac",
+    "shim_version": "2.5.10",
+    "contract_source_revision": "16447abeb9ec50a1673da02bfb39d403b478ec3a",
+    "collection_config_sha256": "3ca4413126bf491905ccf260114ea63bf30f65dab7dc28826a46bbd0c56055ab",
+    "runtime_jars": [
+      {
+        "file": "animal-sniffer-annotations-1.27.jar",
+        "sha256": "cfd7e51a828fe6b98bc0dbb99e34900c9e9012322cb9ddd57fd8dd0b02da5e27"
+      },
+      {
+        "file": "annotations-13.0.jar",
+        "sha256": "ace2a10dc8e2d5fd34925ecac03e4988b2c0f851650c94b8cef49ba1bd111478"
+      },
+      {
+        "file": "annotations-4.1.1.4.jar",
+        "sha256": "ba734e1e84c09d615af6a09d33034b4f0442f8772dec120efb376d86a565ae15"
+      },
+      {
+        "file": "bcpkix-jdk18on-1.84.jar",
+        "sha256": "c87f16ed9e5ec61bc94151e9f3646ac44e50cd448121ce84367fa4b7ec7ec1bb"
+      },
+      {
+        "file": "bcprov-jdk18on-1.84.jar",
+        "sha256": "64d6c5a6121fcd927152dd182cbed39afe0fda641a970d9bcc0c9cb1858b2731"
+      },
+      {
+        "file": "bcutil-jdk18on-1.84.jar",
+        "sha256": "b374e16963421fb9cfb01cc20d7ad8fd2f8b8188e3eef0ec0a8965e245f7619a"
+      },
+      {
+        "file": "classgraph-4.8.184.jar",
+        "sha256": "6e564e29cec95a392268a609f09071d56199383d906ac70e91753a7998d1a3e8"
+      },
+      {
+        "file": "commons-cli-1.11.0.jar",
+        "sha256": "8f7f8605d68e15bf32db61ec94eac6fdafc51b1bdbe1e0e0802b57d23f387792"
+      },
+      {
+        "file": "commons-collections-3.2.2.jar",
+        "sha256": "eeeae917917144a68a741d4c0dff66aa5c5c5fd85593ff217bced3fc8ca783b8"
+      },
+      {
+        "file": "commons-digester-2.1.jar",
+        "sha256": "e0b2b980a84fc6533c5ce291f1917b32c507f62bcad64198fff44368c2196a3d"
+      },
+      {
+        "file": "commons-logging-1.3.6.jar",
+        "sha256": "f8ead8943401081dea0aa824b5b1ba40a0e4ed297a572a0f02258150a0b62357"
+      },
+      {
+        "file": "commons-validator-1.9.0.jar",
+        "sha256": "c3c14748e2d78db58df88808740711bd643b32c45ffa7b8a739f00fb467cd7d7"
+      },
+      {
+        "file": "error_prone_annotations-2.48.0.jar",
+        "sha256": "b49c5c958316ed67a09c699dda9aa749caf434d51d863dea599ef36a49b9c855"
+      },
+      {
+        "file": "everit-json-schema-1.14.6.jar",
+        "sha256": "3ecc895427629c6bfd34e3af85ad9af66a618a7155e2d8797e652c33a3f2bc28"
+      },
+      {
+        "file": "fabric-chaincode-shim-2.5.10.jar",
+        "sha256": "eacb860cbf5ecd5e8e38861926fb87209dfbdd861007efd8ed38f85de37840b1"
+      },
+      {
+        "file": "fabric-protos-0.3.7.jar",
+        "sha256": "6e7cf75e5636aad3660d5dbb1c42a805a4e7bd5b4887bfcf6f4c61b539f8638f"
+      },
+      {
+        "file": "failureaccess-1.0.3.jar",
+        "sha256": "cbfc3906b19b8f55dd7cfd6dfe0aa4532e834250d7f080bd8d211a3e246b59cb"
+      },
+      {
+        "file": "grpc-api-1.81.0.jar",
+        "sha256": "3e6a659ba3edcdac730c857b27725e2e4d985c2241055e8326eb4fe0f9573d53"
+      },
+      {
+        "file": "grpc-context-1.81.0.jar",
+        "sha256": "05de695306f90ded01d41b083b7500eb13dc53763097ac8c5b0264842df06679"
+      },
+      {
+        "file": "grpc-core-1.81.0.jar",
+        "sha256": "3ffe1a91dedf0603269ce597469bf82f93477b12968a9e0d80fbd407e5ba6e99"
+      },
+      {
+        "file": "grpc-netty-shaded-1.81.0.jar",
+        "sha256": "37bc04a00311f268726c92dad9f8211d24551a442ef19dbcc907d5751d36ef12"
+      },
+      {
+        "file": "grpc-protobuf-1.81.0.jar",
+        "sha256": "d274af74b76a7846194e0279708d48900c19070f069241a4034bacd42918df1d"
+      },
+      {
+        "file": "grpc-protobuf-lite-1.81.0.jar",
+        "sha256": "1bf6294b09925cc6aa82b1fd8750650010e45e0c88972670bdc3135c74aaab4c"
+      },
+      {
+        "file": "grpc-stub-1.81.0.jar",
+        "sha256": "963e75cc63c3659ee8e4cb956436cefdd511761f4e85a674caeeb3052744e39d"
+      },
+      {
+        "file": "grpc-util-1.81.0.jar",
+        "sha256": "5ef3f554329ebc18b7ca65de15289acf723a26b8c0bd4e502f41e41abe5a347f"
+      },
+      {
+        "file": "gson-2.13.2.jar",
+        "sha256": "dd0ce1b55a3ed2080cb70f9c655850cda86c206862310009dcb5e5c95265a5e0"
+      },
+      {
+        "file": "guava-33.5.0-jre.jar",
+        "sha256": "1e301f0c52ac248b0b14fdc3d12283c77252d4d6f48521d572e7d8c4c2cc4ac7"
+      },
+      {
+        "file": "handy-uri-templates-2.1.8.jar",
+        "sha256": "6b83846f2ff61d0aaa66997b64b883ec7b65cf13b50a4d7f58250996d429be2e"
+      },
+      {
+        "file": "j2objc-annotations-3.1.jar",
+        "sha256": "84d3a150518485f8140ea99b8a985656749629f6433c92b80c75b36aba3b099b"
+      },
+      {
+        "file": "joda-time-2.10.2.jar",
+        "sha256": "d3d9f78f66ad8e8fbdcb4b4a43481eac95f3cdbcc0fe064542dfbe336c3a0e10"
+      },
+      {
+        "file": "json-20251224.jar",
+        "sha256": "2a3438fbf9293174ea82bdfa35e83d8b965cfe6bddc034a1ac5d60107174c209"
+      },
+      {
+        "file": "jspecify-1.0.0.jar",
+        "sha256": "1fad6e6be7557781e4d33729d49ae1cdc8fdda6fe477bb0cc68ce351eafdfbab"
+      },
+      {
+        "file": "jsr305-3.0.2.jar",
+        "sha256": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7"
+      },
+      {
+        "file": "kotlin-stdlib-2.2.21.jar",
+        "sha256": "6558a3d233da56a20934b32159f9db5f86ed5816ef098f78a2c223dc6abb79dd"
+      },
+      {
+        "file": "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+        "sha256": "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99"
+      },
+      {
+        "file": "okhttp-jvm-5.3.2.jar",
+        "sha256": "c771f48075b763f6c322055e21129a94b7de4c1faf3f8f58ace320b0c9517a30"
+      },
+      {
+        "file": "okio-jvm-3.16.4.jar",
+        "sha256": "2196b993cd34dbbd919e7e01f57a4781b58bee80f86106163e287c20343a96a7"
+      },
+      {
+        "file": "opentelemetry-api-1.62.0.jar",
+        "sha256": "d58143928c049233653e6bf1282ff8a767ebdd5e6a82b3f336158c30e40b431d"
+      },
+      {
+        "file": "opentelemetry-api-incubator-1.61.0-alpha.jar",
+        "sha256": "0f3f4eacb0a29579cb56e94bfbb75fab6aa4e893e7c1e37e91da874d06dbc7ce"
+      },
+      {
+        "file": "opentelemetry-common-1.62.0.jar",
+        "sha256": "d6310bebde67d65c1519696728d8604005315ed08ab14071956fc0826fd71815"
+      },
+      {
+        "file": "opentelemetry-context-1.62.0.jar",
+        "sha256": "8ec86c3609222b9b6307bf40154c1f1c288d1f18ada0155409e7797adbdbe517"
+      },
+      {
+        "file": "opentelemetry-exporter-common-1.62.0.jar",
+        "sha256": "50f84b5b58048f69bd684ec874413944209995e01c177200555c151dabfe1ec9"
+      },
+      {
+        "file": "opentelemetry-exporter-otlp-1.62.0.jar",
+        "sha256": "59df47fdc4bef6866ed39eb6a04892c68e28d7938eaeaa21801ac5dd2dcb0d65"
+      },
+      {
+        "file": "opentelemetry-exporter-otlp-common-1.62.0.jar",
+        "sha256": "79eaaaf044df15209ee1461b668f7c93547734a793d6cf6ad5e57290d3f8c0ea"
+      },
+      {
+        "file": "opentelemetry-exporter-sender-okhttp-1.62.0.jar",
+        "sha256": "8c9b2c4394543c4f28e0a6c66d16259a1bfaf67a47a689fb001bd9a92dafb6ea"
+      },
+      {
+        "file": "opentelemetry-extension-trace-propagators-1.62.0.jar",
+        "sha256": "d301b26215e8f18553b62759d2c17493f321b8c74d9782841446ab8d2d716b9f"
+      },
+      {
+        "file": "opentelemetry-grpc-1.6-2.27.0-alpha.jar",
+        "sha256": "0ecb5000333c507367e54934ca6a3fbd75148a06d0eac4b577963e515d958609"
+      },
+      {
+        "file": "opentelemetry-instrumentation-api-2.27.0.jar",
+        "sha256": "e9928acbe8867fa84102c6a40c35266f39eef7f72c566884270565434b315c07"
+      },
+      {
+        "file": "opentelemetry-instrumentation-api-incubator-2.27.0-alpha.jar",
+        "sha256": "991a817ef0cf97aa53e35744c8ab47667526c665701ab3084af00336cec7e3ed"
+      },
+      {
+        "file": "opentelemetry-proto-1.10.0-alpha.jar",
+        "sha256": "931e84b0802d77ae963e26c6ad6129b4ad0f2510fe907f019f5c988c2a869c3a"
+      },
+      {
+        "file": "opentelemetry-sdk-1.62.0.jar",
+        "sha256": "99d421ea0e5a1ca8e45cb67f1d5db7f0e8a718dd55eeb86c1323597e1f10aed3"
+      },
+      {
+        "file": "opentelemetry-sdk-common-1.62.0.jar",
+        "sha256": "bf9d13df9a50e49a5db664ba8ebfad79f73f03219d2ac6f6709d432f6896eba0"
+      },
+      {
+        "file": "opentelemetry-sdk-extension-autoconfigure-1.62.0.jar",
+        "sha256": "4165984bdc3261486918a55815ae57d5e75ba08730d1e1ccf97908720659b619"
+      },
+      {
+        "file": "opentelemetry-sdk-extension-autoconfigure-spi-1.62.0.jar",
+        "sha256": "220c22bcf420faae59b7225c789f572eaa22e7af2304d55508aaf2a3efcfecf8"
+      },
+      {
+        "file": "opentelemetry-sdk-logs-1.62.0.jar",
+        "sha256": "51c94329bc8e335ed79027d29d49c075c11b91b39e48679edf590e784a392406"
+      },
+      {
+        "file": "opentelemetry-sdk-metrics-1.62.0.jar",
+        "sha256": "50b057fbf063f6801f623212f4b51b6a3fefc77837314a1316b2f54894c8b5d4"
+      },
+      {
+        "file": "opentelemetry-sdk-trace-1.62.0.jar",
+        "sha256": "fb6c0953b229a6da1db813135ae11a621bf9da56b7356c1e93049ed4b088c232"
+      },
+      {
+        "file": "opentelemetry-semconv-1.41.1.jar",
+        "sha256": "636ad7dac093d22fb84bf8d928ef836694f2d63c92d72b3df21b86002e8becef"
+      },
+      {
+        "file": "perfmark-api-0.27.0.jar",
+        "sha256": "c7b478503ec524e55df19b424d46d27c8a68aeb801664fadd4f069b71f52d0f6"
+      },
+      {
+        "file": "proto-google-common-protos-2.64.1.jar",
+        "sha256": "beb8107f340dc0bb04bf40d1a61631a21e450c58aad93c160959f0292136d99f"
+      },
+      {
+        "file": "protobuf-java-4.34.1.jar",
+        "sha256": "ae0459030b54a6f3058ad349aa01fc2edcbb2d4a84b73699675bbd125df2e96d"
+      },
+      {
+        "file": "protobuf-java-util-4.34.1.jar",
+        "sha256": "5d82fa744a6935bef1fce329e886b03d26c46389db7e3f5cd8363bc795908580"
+      },
+      {
+        "file": "re2j-1.8.jar",
+        "sha256": "7b52c72156dd7f98b3237a5b35c1d34fba381b21048c89208913ad80a45dfbd7"
+      }
+    ],
+    "annotation_processor": {
+      "file": "lombok-1.18.38.jar",
+      "sha256": "1e1e427c36ff63c44fd30ef292d9e773ea3154460ab6265d3fed7e6f5bc50fb9",
+      "on_runner_classpath": true
+    }
+  },
+  "input": {
+    "name": "Freeboard-SK",
+    "file": "maritime-data/freeboard-inventory.json",
+    "sha256": "b7223580930c23df3fc656ecdff0b8986589acbd37ee8d14d46948cb2fa81a90",
+    "component_count": 80
+  },
+  "source_sha256": {
+    "src/native/fabric_run.py": "8004267d5276bbaa6aa0f3219dca7f91636d8cc63bf364b9214145aa2454b28c",
+    "src/native/run_integration.sh": "a34e7ff2397462d92e1e818ab5be6600cd10a2427a0169e1df6007f5304bf57d",
+    "src/native/peer-loopback.patch": "7722c1c2e78ee164af694ee78223a3d9dfb3f4275378ea701a2149e80fdeaead",
+    "src/sbom_disclosure.py": "7ffba73443d74b1703fa74e5da8d5c0465b6e295403bfc25ce0068e2a9837043",
+    "src/evaluate.py": "7dd05b0f8530e28392ab239f99c2855c875e17747c1943e991de017eba7458ac"
+  },
+  "registration_transactions": {
+    "checked_peer_blockstores": [
+      "Org1MSP",
+      "Org2MSP",
+      "Org3MSP"
+    ],
+    "records": [
+      {
+        "block_number": 5,
+        "transaction_index": 0,
+        "transaction_id": "5b17b7be4388d0668eecef472473f2eb1a69d2b87017240c2aace6baa1cbbd68",
+        "validation_code": "VALID"
+      },
+      {
+        "block_number": 6,
+        "transaction_index": 0,
+        "transaction_id": "f8006e8aa631551ce81930574d151ca63d090a193c0ad48b70136a68d5506916",
+        "validation_code": "VALID"
+      }
+    ]
+  },
+  "check_counts": {
+    "fabric": 10,
+    "locally_verified_against_retrieved_anchors": 6,
+    "passed": 16
+  },
+  "evidence_sha256": {
+    "native_rc4_outcomes.json": "82632e41c791098f8b0d2fad0be49907a098a9df5a72c59a7267ae7fdbfa0916",
+    "native_rc4_trace.jsonl": "2c16caaf87d643feccb5a200b2b87c60ad721990d96117a9ab1f6bf3e93e32c8"
+  }
+}

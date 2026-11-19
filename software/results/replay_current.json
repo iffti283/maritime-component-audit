@@ -1,0 +1,14 @@
+{
+  "software_version": "0.1.0-rc4",
+  "python": "CPython 3.12.14",
+  "zlib": "1.3.2",
+  "gzip_compresslevel": 6,
+  "gzip_mtime": 0,
+  "inventories": 10,
+  "matched_requests": 1210,
+  "method_rows_compared": 3630,
+  "method_rows_mismatched_excluding_verify_ns": 0,
+  "dataset_rows_mismatched_excluding_build_ns": 0,
+  "structural_violations": 0,
+  "firmware_fixture_sha256": "497ec737481150d4cae70c3d4d8e6267a0da3e9fe387ae6f59bca3ff9f27af90"
+}
