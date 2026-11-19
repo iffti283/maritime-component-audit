@@ -257,5 +257,3 @@ hashes. If a[j] counts active nodes at level j (the leaves are level 0), the bat
 has F = sum(2 a[j+1] - a[j]) for j = 0 through d-1. Each active parent needs two children,
 and a[j] are already available. The matched uncompressed binary saving is 32(kd-F) bytes.
 Compressed sizes also depend on the encoding and contents of the disclosed records.
-
-The authors reviewed the AI-assisted software implementation and technical documentation and take responsibility for both.
